@@ -1,4 +1,5 @@
 MMC20 Application for Lateral Movement POC AND Detection
+
 Hello everyone,
 
 You have probably encountered situations where, while designing and creating a Detection Rule or Use Case to identify the MMC20 Application Object-based Lateral Movement technique, you needed to conduct research on this topic.
