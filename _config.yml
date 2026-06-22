@@ -10,7 +10,6 @@ baseurl: ""
 
 plugins:
   - jekyll-feed
-  - jekyll-include-cache
   - jekyll-remote-theme
 
 permalink: /:categories/:year/:month/:day/:title/
@@ -22,6 +21,3 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-
-include:
-  - _pages
