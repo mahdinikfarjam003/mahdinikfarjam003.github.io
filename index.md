@@ -158,6 +158,24 @@ The following screenshot shows the results generated from the Splunk App-ES dete
 
 ---
 
+## Mitigation
+
+To reduce the risk of MMC20-based DCOM lateral movement, security teams should implement multiple layers of preventive and detective controls across endpoint and network infrastructure.
+
+Key mitigation strategies include:
+
+* Disabling or restricting **DCOM** where it is not required for business operations.
+* Blocking **RPC traffic** between workstation systems to limit remote COM/DCOM communication paths.
+* Monitoring and detecting suspicious child processes originating from `mmc.exe`, as this may indicate abuse of Microsoft Management Console for remote execution.
+* Ensuring that **Windows Defender** or equivalent endpoint protection is enabled and properly configured, as it can provide baseline detection and blocking capabilities for known abuse patterns.
+* Verifying that **Windows Firewall** is active and correctly configured to restrict unnecessary inbound and lateral communication.
+* Reviewing application control policies to ensure that **Microsoft Management Console (MMC)** is not permitted as an unrestricted execution path or bypass mechanism in security rules.
+
+These controls significantly reduce the attack surface associated with COM/DCOM-based lateral movement techniques and improve visibility into abnormal remote execution behavior within Windows environments.
+
+
+---
+
 ## MITRE ATT&CK Mapping
 
 The MMC20 Application abuse through DCOM is mapped to the following MITRE ATT&CK techniques, primarily focusing on lateral movement and remote service execution mechanisms.
