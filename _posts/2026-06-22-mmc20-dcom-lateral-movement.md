@@ -137,7 +137,7 @@ The screenshot below displays the Analyst queue in App-ES
 
 The following Splunk SPL query is used to detect potential MMC20-based lateral movement activity by analyzing process relationships and suspicious MMC execution patterns within the Endpoint data model.
 
-```splunk
+```sql
 | tstats `summariesonly` count
   from datamodel=Endpoint.Processes
   where (
