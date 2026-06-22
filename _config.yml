@@ -1,3 +1,9 @@
 theme: jekyll-theme-minimal
+
 title: MMC20 Application Lateral Movement
-description: Research, PoC and Detection
+description: Detection Engineering, Threat Hunting and Security Research Blog
+
+show_downloads: false
+
+github:
+  is_project_page: false
