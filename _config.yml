@@ -5,12 +5,15 @@ remote_theme: "mmistakes/minimal-mistakes"
 
 minimal_mistakes_skin: "dark"
 
+url: "https://mahdinikfarjam003.github.io"
+baseurl: ""
+
 plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-remote-theme
 
-show_downloads: false
+permalink: /:categories/:year/:month/:day/:title/
 
 category_archive:
   type: liquid
@@ -20,11 +23,5 @@ tag_archive:
   type: liquid
   path: /tags/
 
-author:
-  name   : "Your Name"
-  avatar : "/assets/images/avatar.png"
-  bio    : "Security Researcher | Detection Engineering | Threat Hunting"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-github"
-      url: "https://github.com/mahdinikfarjam003"
+include:
+  - _pages
