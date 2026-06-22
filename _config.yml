@@ -1,4 +1,4 @@
-theme: jekyll-theme-minimal
+remote_theme: "mmistakes/minimal-mistakes"
 
 title: MMC20 Application Lateral Movement
 description: Detection Engineering, Threat Hunting and Security Research Blog
