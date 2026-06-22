@@ -7,10 +7,6 @@ categories: [Detection Engineering, Lateral Movement, Windows]
 tags: [DCOM, MMC20, Splunk, MITRE ATT&CK, Threat Hunting]
 ---
 
-layout: default
-title: MMC20 Application Lateral Movement
----
-
 # MMC20 Application for Lateral Movement
 ### PoC and Detection
 
