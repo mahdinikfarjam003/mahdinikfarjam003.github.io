@@ -11,6 +11,9 @@ baseurl: ""
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-sitemap
+  - jekyll-paginate
 
 permalink: /:categories/:year/:month/:day/:title/
 
