@@ -92,7 +92,7 @@ $a = [System.Activator]::CreateInstance(
 )
 ```
 
-![MMC20 Registry Enumeration](images/Screenshot 2026-06-22 091047.png)
+![MMC20 Registry Enumeration](images/Screenshot-2026-06-22-091047.png)
 ---
 
 ### Remote Command Execution via DCOM Object
