@@ -93,7 +93,7 @@ $a = [System.Activator]::CreateInstance(
 )
 ```
 
-![MMC20 Registry Enumeration]({{ "/images/Screenshot-2026-06-22-091047.png" | relative_url }
+![MMC20 Registry Enumeration]({{ "/images/Screenshot-2026-06-22-091047.png" | relative_url }})
 ---
 
 ### Remote Command Execution via DCOM Object
