@@ -157,6 +157,48 @@ The following screenshot shows the results generated from the Splunk App-ES dete
 
 ---
 
+## MITRE ATT&CK Mapping
+
+The MMC20 Application abuse through DCOM is mapped to the following MITRE ATT&CK techniques, primarily focusing on lateral movement and remote service execution mechanisms.
+
+### Technique Mapping
+
+* **T1021.003 – Distributed Component Object Model (DCOM)**
+  This technique is directly relevant as the attack leverages COM/DCOM interfaces to execute commands remotely on a victim system.
+
+* **T1047 – Windows Management Instrumentation (WMI)** *(indirect relevance)*
+  Although not used in this specific scenario, WMI is often associated with similar remote execution techniques in Windows environments.
+
+* **T1059.003 – Windows Command Shell**
+  The execution of `cmd.exe` via the COM object results in command-line based payload execution on the target system.
+
+---
+
+### Attack Flow Context
+
+The MMC20 technique enables an attacker to abuse trusted Windows components to perform lateral movement without relying on traditional remote administration tools. This makes detection more challenging in environments where COM/DCOM usage is normal.
+
+---
+
+### MITRE ATT&CK Visualization
+
+The following diagram illustrates how MMC20-based DCOM abuse aligns within the ATT&CK framework, highlighting its role in lateral movement:
+
+![MITRE ATT\&CK MMC20 Mapping](images/mitre-mmc20-attack-map.png)
+
+---
+
+### Summary
+
+This technique demonstrates how legitimate Windows COM infrastructure can be repurposed for adversary-controlled remote execution. From a detection perspective, the behavior primarily manifests under:
+
+* Lateral Movement phase
+* Remote Service Abuse
+* COM/DCOM object activation anomalies
+
+
+---
+
 ## References
 
 * https://www.elastic.co/docs/reference/security/prebuilt-rules/rules/windows/lateral_movement_dcom_mmc20
