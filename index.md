@@ -37,6 +37,7 @@ In this article, we will walk through the topic step by step, covering:
 4. PoC
 5. Detection
 6. Mitigation
+7. MITRE ATT&CK
 
 ---
 
