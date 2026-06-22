@@ -37,3 +37,19 @@ In this article, we will walk through the topic step by step, covering:
 4. PoC
 5. Detection
 6. Mitigation
+
+---
+
+## Introduction
+
+The Microsoft Component Object Model (COM) is a platform-independent, distributed, object-oriented architecture that enables software components to communicate and interact with one another. COM serves as the underlying technology for several Microsoft technologies, including OLE, ActiveX, and many other Windows-based applications and services.
+
+Because COM objects can also be accessed remotely through the Distributed Component Object Model (DCOM), this functionality can be abused by attackers to perform lateral movement between systems within an enterprise environment.
+
+To demonstrate this technique, the following lab environment was used throughout this research.
+
+**Reference:**
+https://docs.microsoft.com/en-us/windows/win32/com/the-component-object-model
+
+The diagram below illustrates the relationship between the attacker and victim hosts used throughout this research.
+![DCOM Lab Environment](images/dcom-lab.png)
