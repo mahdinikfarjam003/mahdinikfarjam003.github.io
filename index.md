@@ -126,3 +126,44 @@ In the following section, we analyze the implemented detection use case within S
 The screenshot below displays the Analyst queue in App-ES
 
 ![Splunk App-ES Detection Use Case](images/ES.png)
+
+---
+
+## Detection Logic (Splunk)
+
+The following Splunk SPL query is used to detect potential MMC20-based lateral movement activity by analyzing process relationships and suspicious MMC execution patterns within the Endpoint data model.
+
+```splunk
+| tstats `summariesonly` count
+  from datamodel=Endpoint.Processes
+  where (
+        (Processes.parent_process_name="svchost.exe" AND Processes.process_name="mmc.exe")
+        OR (Processes.parent_process_name="mmc.exe" AND Processes.process_name IN ("mmc.exe","cmd.exe","powershell.exe")) 
+        OR (Processes.process="C:\\Windows\\system32\\mmc.exe -Embedding")
+  )
+  by _time Processes.dest Processes.user Processes.parent_process_name Processes.process_name Processes.process
+| sort _time
+```
+
+The query focuses on identifying abnormal MMC execution chains, including MMC spawning from `svchost.exe`, child process spawning from `mmc.exe`, and direct execution of MMC in embedding mode which is commonly associated with DCOM-based abuse.
+
+---
+
+### Detection Output
+
+The following screenshot shows the results generated from the Splunk App-ES detection query, highlighting potential lateral movement behavior across the monitored environment:
+
+![Splunk MMC20 Detection Output](images/Result.png)
+
+---
+
+## References
+
+* https://www.elastic.co/docs/reference/security/prebuilt-rules/rules/windows/lateral_movement_dcom_mmc20
+* https://substantial-nation-46c.notion.site/Lateral-Movement-via-DCOM-MMC20-e6e798dcd3384566b07e8b7ea66d251a
+* https://www.ired.team/offensive-security/lateral-movement/t1175-distributed-component-object-model
+* https://enigma0x3.net/2017/01/05/lateral-movement-using-the-mmc20-application-com-object/
+* https://learn.microsoft.com/en-us/previous-versions/windows/desktop/mmc/view-executeshellcommand
+* https://learn.microsoft.com/en-us/dotnet/api/system.type.gettypefromclsid?view=netframework-4.7.2#System_Type_GetTypeFromCLSID_System_Guid_System_String_
+* https://learn.microsoft.com/en-us/windows/win32/com/com-technical-overview
+* https://learn.microsoft.com/en-us/windows/win32/com/the-component-object-model
