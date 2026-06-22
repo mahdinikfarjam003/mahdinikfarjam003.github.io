@@ -75,7 +75,7 @@ Get-ChildItem 'registry::HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{49B2791A-B1AE-4C90
 
 The following screenshot demonstrates the registry enumeration using PowerShell:
 
-![MMC20 Registry Enumeration](images/Screenshot 2026-06-22 091047.pngط)
+![MMC20 Registry Enumeration](images/Registry.png)
 
 ---
 
@@ -89,6 +89,7 @@ $a = [System.Activator]::CreateInstance(
 )
 ```
 
+![MMC20 Registry Enumeration](images/Screenshot 2026-06-22 091047.png)
 ---
 
 ### Remote Command Execution via DCOM Object
