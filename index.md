@@ -123,6 +123,6 @@ Detection of MMC20-based lateral movement can be performed using Splunk and App-
 
 In the following section, we analyze the implemented detection use case within Splunk App-ES, highlighting how telemetry is correlated to identify potential lateral movement activity.
 
-The screenshot below shows the configured detection logic and analysis dashboard within Splunk App-ES:
+The screenshot below displays the Analyst queue in App-ES
 
-![Splunk App-ES Detection Use Case](images/splunk-appes-mmc20.png)
+![Splunk App-ES Detection Use Case](images/ES.png)
