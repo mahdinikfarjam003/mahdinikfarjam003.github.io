@@ -52,4 +52,4 @@ To demonstrate this technique, the following lab environment was used throughout
 https://docs.microsoft.com/en-us/windows/win32/com/the-component-object-model
 
 The diagram below illustrates the relationship between the attacker and victim hosts used throughout this research.
-![DCOM Lab Environment](images/dcom-lab.png)
+![DCOM Lab Environment](images/MMC20.png)
