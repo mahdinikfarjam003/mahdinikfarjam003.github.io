@@ -206,7 +206,7 @@ The MMC20 technique enables an attacker to abuse trusted Windows components to p
 
 The following diagram illustrates how MMC20-based DCOM abuse aligns within the ATT&CK framework, highlighting its role in lateral movement:
 
-![MITRE ATT\&CK MMC20 Mapping](images/Mitre.png)
+![MITRE ATT\&CK MMC20 Mapping](images/Diagram.png)
 
 MITRE ATT&CK Hierarchical:
 ```txt
