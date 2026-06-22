@@ -208,6 +208,16 @@ The following diagram illustrates how MMC20-based DCOM abuse aligns within the A
 
 ![MITRE ATT\&CK MMC20 Mapping](images/mitre-mmc20-attack-map.png)
 
+MITRE ATT&CK Hierarchical:
+```txt
+[ ENTERPRISE MATRIX ]
+   └── [ TACTIC: TA0008 - LATERAL MOVEMENT ]
+          └── [ TECHNIQUE: T1021 - REMOTE SERVICES ]
+                 └── [ SUB-TECHNIQUE: T1021.003 - DISTRIBUTED COMPONENT OBJECT MODEL (DCOM) ]
+                        └──  Abuse Mechanism: MMC20.Application COM Object
+
+```
+
 ---
 
 ### Summary
