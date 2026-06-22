@@ -75,7 +75,7 @@ Get-ChildItem 'registry::HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{49B2791A-B1AE-4C90
 
 The following screenshot demonstrates the registry enumeration using PowerShell:
 
-![MMC20 Registry Enumeration](images/mmc20-registry.png)
+![MMC20 Registry Enumeration](images/Screenshot 2026-06-22 091047.pngط)
 
 ---
 
@@ -85,7 +85,7 @@ A remote COM object can be instantiated using the `MMC20.Application` ProgID, al
 
 ```powershell
 $a = [System.Activator]::CreateInstance(
-    [type]::GetTypeFromProgID("MMC20.Application.1", "10.0.0.2")
+    [type]::GetTypeFromProgID("MMC20.Application.1", "192.168.254.132")
 )
 ```
 
@@ -112,7 +112,7 @@ This command executes `hostname` on the remote machine and writes the output to 
 
 The following screenshot illustrates successful command execution on the victim system, where the hostname output has been written to the target file:
 
-![DCOM Command Execution Result](images/dcom-execution-result.png)
+![DCOM Command Execution Result](images/Screenshot 2026-06-22 091047.png)
 
 ---
 
