@@ -19,3 +19,12 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+author:
+  name   : "Your Name"
+  avatar : "/assets/images/avatar.png"
+  bio    : "Security Researcher | Detection Engineering | Threat Hunting"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/mahdinikfarjam003"
