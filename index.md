@@ -117,7 +117,7 @@ This command executes `hostname` on the remote machine and writes the output to 
 
 The following screenshot illustrates successful command execution on the victim system, where the hostname output has been written to the target file:
 
-![DCOM Command Execution Result](images/Screenshot 2026-06-22 091424.png)
+![DCOM Command Execution Result](images/Screenshot-2026-06-22-091424.png)
 
 ---
 
