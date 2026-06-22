@@ -2,9 +2,9 @@
 title: "MMC20 DCOM Lateral Movement – Detection & PoC"
 date: 2026-06-22
 layout: single
+author_profile: true
 categories: [Detection Engineering, Lateral Movement, Windows]
 tags: [DCOM, MMC20, Splunk, MITRE ATT&CK, Threat Hunting]
-author_profile: true
 ---
 
 layout: default
