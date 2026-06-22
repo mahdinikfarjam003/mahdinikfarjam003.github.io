@@ -79,7 +79,7 @@ Get-ChildItem 'registry::HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{49B2791A-B1AE-4C90
 
 The following screenshot demonstrates the registry enumeration using PowerShell:
 
-![MMC20 Registry Enumeration]({{ "/images/Registry.png" | relative_url }})
+![MMC20 Registry Enumeration](images/Registry.png)
 
 ---
 
@@ -93,7 +93,7 @@ $a = [System.Activator]::CreateInstance(
 )
 ```
 
-![MMC20 Registry Enumeration]({{ "/images/Screenshot-2026-06-22-091047.png" | relative_url }})
+![MMC20 Registry Enumeration](images/Screenshot-2026-06-22-091047.png)
 ---
 
 ### Remote Command Execution via DCOM Object
@@ -117,7 +117,7 @@ This command executes `hostname` on the remote machine and writes the output to 
 
 The following screenshot illustrates successful command execution on the victim system, where the hostname output has been written to the target file:
 
-![DCOM Command Execution Result]({{ "/images/Screenshot-2026-06-22-091424.png" | relative_url }})
+![DCOM Command Execution Result](images/Screenshot 2026-06-22 091424.png)
 
 ---
 
@@ -129,7 +129,7 @@ In the following section, we analyze the implemented detection use case within S
 
 The screenshot below displays the Analyst queue in App-ES
 
-![Splunk App-ES Detection Use Case]({{ "/images/ES.png" | relative_url }})
+![Splunk App-ES Detection Use Case](images/ES.png)
 
 ---
 
@@ -157,7 +157,7 @@ The query focuses on identifying abnormal MMC execution chains, including MMC sp
 
 The following screenshot shows the results generated from the Splunk App-ES detection query, highlighting potential lateral movement behavior across the monitored environment:
 
-![Splunk MMC20 Detection Output]({{ "/images/Result.png" | relative_url }})
+![Splunk MMC20 Detection Output](images/Result.png)
 
 ---
 
@@ -206,7 +206,7 @@ The MMC20 technique enables an attacker to abuse trusted Windows components to p
 
 The following diagram illustrates how MMC20-based DCOM abuse aligns within the ATT&CK framework, highlighting its role in lateral movement:
 
-![MITRE ATT&CK MMC20 Mapping]({{ "/images/mitre-mmc20-attack-map.png" | relative_url }})
+![MITRE ATT\&CK MMC20 Mapping](images/mitre-mmc20-attack-map.png)
 
 ---
 
