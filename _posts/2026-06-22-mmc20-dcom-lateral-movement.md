@@ -1,13 +1,14 @@
 ---
+
 title: "MMC20 DCOM Lateral Movement – Detection & PoC"
 date: 2026-06-22
 layout: single
 author_profile: true
 categories: [Detection Engineering, Lateral Movement, Windows]
 tags: [DCOM, MMC20, Splunk, MITRE ATT&CK, Threat Hunting]
+
 ---
 
-# MMC20 Application for Lateral Movement
 ### PoC and Detection
 
 Hello everyone, You have probably encountered situations where, while designing and creating a Detection Rule or Use Case to identify the MMC20 Application Object-based Lateral Movement technique, you needed to conduct research on this topic.
